@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ntwitter/static/css/main.a749d3de.css",
+    "main.js": "/ntwitter/static/js/main.a235de18.js",
+    "index.html": "/ntwitter/index.html",
+    "main.a749d3de.css.map": "/ntwitter/static/css/main.a749d3de.css.map",
+    "main.a235de18.js.map": "/ntwitter/static/js/main.a235de18.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a749d3de.css",
+    "static/js/main.a235de18.js"
+  ]
+}
