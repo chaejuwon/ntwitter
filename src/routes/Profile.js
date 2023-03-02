@@ -27,27 +27,38 @@ const Profile = ({ refreshUser, userObj }) => {
   };
   const onSubmit = async (e) => {
     e.preventDefault();
-    if(userObj.displayName !== newDisplayName) {
+    if (userObj.displayName !== newDisplayName) {
       await userObj.updateProfile({
-        displayName:newDisplayName
+        displayName: newDisplayName,
       });
       refreshUser();
-    }    
+    }
   };
 
   return (
-    <>
-      <form onSubmit={onSubmit}>
+    <div className="container">
+      <form onSubmit={onSubmit} className="profileForm">
         <input
           onChange={onChange}
           value={newDisplayName}
           type="text"
+          autoFocus
           placeholder="Display name"
+          className="formInput"
         />
-        <input type="submit" value="update Profile" />
+        <input
+          type="submit"
+          value="Update Profile"
+          className="formBtn"
+          style={{
+            marginTop: 10,
+          }}
+        />
       </form>
-      <button onClick={onLogOutClick}>Log Out</button>
-    </>
+      <span className="formBtn cancelBtn logOut" onClick={onLogOutClick}>
+        Log Out
+      </span>
+    </div>
   );
 };
 

@@ -17,9 +17,9 @@ const Home = ({ userObj }) => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <NtweetFactory userObj={userObj} />
-      <div>
+      <div style={{ marginTop: 30 }}>
         {Ntweets.map((Ntweet) => (
           <Ntweet1
             key={Ntweet}
