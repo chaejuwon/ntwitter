@@ -31,7 +31,7 @@ const Ntweet = ({ ntweetObj, isOwner }) => {
   return (
     <div className="nweet">
       {editing ? (
-        <>
+        <div>
           <form onSubmit={onSubmit} className="container nweetEdit">
             <input
               type="text"
@@ -47,7 +47,7 @@ const Ntweet = ({ ntweetObj, isOwner }) => {
           <span onClick={toggleEditing} className="formBtn cancelBtn">
             Cancel
           </span>
-        </>
+        </div>
       ) : (
         <>
           <h4>{ntweetObj.text}</h4>

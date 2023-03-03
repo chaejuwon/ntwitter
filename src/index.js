@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
 import {authService} from "fbase"
+import { HashRouter } from "react-router-dom";
 import "./style.css";
 // console.log({authService});
 
@@ -10,5 +11,8 @@ root.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-  <App />
+  <HashRouter base="/">
+    <App />
+  </HashRouter>
+
 );
